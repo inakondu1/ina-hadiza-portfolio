@@ -68,6 +68,59 @@
             text-align: center;
             padding: 20px;
         }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 35px auto;
+            text-align: left;
+        }
+
+        .project-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #e8e1d4;
+            box-shadow: 0 4px 15px rgba(20, 36, 58, 0.07);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card h3 {
+            color: #14243a;
+            margin-top: 0;
+        }
+
+        .project-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .project-tech {
+            color: #9b7b3e;
+            font-size: 14px;
+            margin-top: auto;
+            padding-top: 12px;
+        }
+
+        .project-link {
+            display: inline-block;
+            background: #14243a;
+            color: #e6c98b;
+            text-decoration: none;
+            padding: 11px 16px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 18px;
+        }
+
+        .project-link:hover {
+            background: #c5a45d;
+            color: #14243a;
+        }
+
     </style>
 </head>
 
@@ -79,6 +132,7 @@
         <nav>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a href="#creative-works">Creative Works</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -120,8 +174,97 @@
     <section id="projects">
         <h2>My Projects</h2>
 
+        <p>Some of the digital solutions and applications I have worked on.</p>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3>IDOMA HUB</h3>
+                <p>A cultural and social networking platform designed to preserve the Idoma language, heritage and traditions while connecting people.</p>
+                <div class="project-tech">Go · HTML · CSS · JavaScript · PostgreSQL</div>
+                <a class="project-link" href="https://github.com/inakondu1/IDOMA_HUB" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>ASEBE FABRICKS</h3>
+                <p>A fabric shopping platform built to showcase products and provide customers with an online shopping experience.</p>
+                <div class="project-tech">Go · HTML · CSS · Web Development</div>
+                <a class="project-link" href="https://github.com/inakondu1/ASEBE_FABRICKS" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>FLAMING SWORD MINISTRY INTERNATIONAL</h3>
+                <p>A ministry website providing church information, spiritual resources and administrative management features.</p>
+                <div class="project-tech">Go · HTML · CSS · SQLite</div>
+                <a class="project-link" href="https://github.com/inakondu1/FSMI" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                <a class="project-link" href="https://fsmi.onrender.com/" target="_blank" rel="noopener noreferrer">Visit Live Website →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>THE COMFORT SPOON</h3>
+                <p>A restaurant ordering and management application with product listings, customer orders, payment integration and administration features.</p>
+                <div class="project-tech">Go · HTML · CSS · JavaScript · Database Integration</div>
+                <a class="project-link" href="https://github.com/inakondu1/THE_COMFORT_SPOON" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>CampusFlow</h3>
+                <p>A school workflow management project designed to organise processes, track tasks and generate reports.</p>
+                <div class="project-tech">Python · Software Development · Git</div>
+                <a class="project-link" href="https://github.com/inakondu1/campusflow-team" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>MYSTERY ISLAND</h3>
+                <p>A Python text-based adventure game where players explore locations, solve puzzles, manage energy and complete a mission.</p>
+                <div class="project-tech">Python · Object-oriented Programming · Unit Testing</div>
+                <a class="project-link" href="https://github.com/inakondu1/MYSTERY_ISLAND" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="creative-works">
+        <h2>Beyond Code, There Are Words</h2>
+
         <p>
-            IDOMA HUB | CampusFlow | Mystery Island
+            Creativity is another part of who I am. I enjoy expressing
+            ideas, emotions and experiences through spoken-word expression,
+            poetry and scriptwriting.
+        </p>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3>Spoken Word</h3>
+                <p>
+                    Exploring the power of spoken words to express ideas,
+                    emotions and meaningful messages.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Poetry</h3>
+                <p>
+                    Writing poems inspired by life, identity, culture,
+                    emotions and everyday experiences.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Scriptwriting</h3>
+                <p>
+                    Developing scripts, characters and stories
+                    through creative writing.
+                </p>
+            </div>
+
+        </div>
+
+        <p>
+            My original creative works are not published here.
+            For creative collaborations or enquiries, please get in touch.
         </p>
     </section>
 
